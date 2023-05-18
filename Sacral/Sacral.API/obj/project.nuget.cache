@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tcuxDmylZlbzKy2YDZhEjw7vQ32N1JRXHhxoimyYUa2gXNEScWvyK2GhnYpj3pQJ34i0FacUZVHYz0q1PSgoYg==",
+  "dgSpecHash": "MLsjNbNt1BJqzr1HB1SuvZwa9GIL4F7oclkb6Ueh2rsiVtcfFAKdhYB0cMz7xLPW8v9YcKqxackbGENHnT0BgQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\932\\202305180834\\Sacral\\Sacral.API\\Sacral.API.csproj",
+  "projectFilePath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\933\\202305181835\\Sacral\\Sacral.API\\Sacral.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

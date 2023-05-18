@@ -53,3 +53,6 @@ D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler
 D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\930\202305184048\Sacral\Sacral.API\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
 D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\930\202305184048\Sacral\Sacral.API\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
 D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\930\202305184048\Sacral\Sacral.API\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\932\202305180834\Sacral\Sacral.API\obj\Debug\net6.0\Sacral.API.dll
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\932\202305180834\Sacral\Sacral.API\obj\Debug\net6.0\refint\Sacral.API.dll
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\932\202305180834\Sacral\Sacral.API\obj\Debug\net6.0\Sacral.API.pdb

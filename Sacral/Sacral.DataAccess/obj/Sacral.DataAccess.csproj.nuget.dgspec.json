@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\930\\202305184048\\Sacral\\Sacral.DataAccess\\Sacral.DataAccess.csproj": {}
+    "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\932\\202305180834\\Sacral\\Sacral.DataAccess\\Sacral.DataAccess.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\930\\202305184048\\Sacral\\Sacral.DataAccess\\Sacral.DataAccess.csproj": {
+    "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\932\\202305180834\\Sacral\\Sacral.DataAccess\\Sacral.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\930\\202305184048\\Sacral\\Sacral.DataAccess\\Sacral.DataAccess.csproj",
+        "projectUniqueName": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\932\\202305180834\\Sacral\\Sacral.DataAccess\\Sacral.DataAccess.csproj",
         "projectName": "Sacral.DataAccess",
-        "projectPath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\930\\202305184048\\Sacral\\Sacral.DataAccess\\Sacral.DataAccess.csproj",
+        "projectPath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\932\\202305180834\\Sacral\\Sacral.DataAccess\\Sacral.DataAccess.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\930\\202305184048\\Sacral\\Sacral.DataAccess\\obj\\",
+        "outputPath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\932\\202305180834\\Sacral\\Sacral.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\930\\202305184048\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj": {
-                "projectPath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\930\\202305184048\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj"
+              "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\932\\202305180834\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj": {
+                "projectPath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\932\\202305180834\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj"
               }
             }
           }
@@ -47,6 +47,10 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.19.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
             }
           },
           "imports": [
@@ -69,14 +73,14 @@
         }
       }
     },
-    "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\930\\202305184048\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj": {
+    "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\932\\202305180834\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\930\\202305184048\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj",
+        "projectUniqueName": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\932\\202305180834\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj",
         "projectName": "Sacral.DTO",
-        "projectPath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\930\\202305184048\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj",
+        "projectPath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\932\\202305180834\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\930\\202305184048\\Sacral\\Sacral.DTO\\obj\\",
+        "outputPath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\932\\202305180834\\Sacral\\Sacral.DTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",

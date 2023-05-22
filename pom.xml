@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.Sacral</groupId>
-	<artifactId>CT1-116</artifactId>
+	<artifactId>SATPU-9</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>Testing_2</name>

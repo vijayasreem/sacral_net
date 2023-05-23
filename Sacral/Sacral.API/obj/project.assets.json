@@ -6603,37 +6603,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\933\\202305181835\\Sacral\\Sacral.API\\Sacral.API.csproj",
+      "projectUniqueName": "C:\\Amar\\Application\\20230518\\Apps\\1\\979\\202305230618\\Sacral\\Sacral.API\\Sacral.API.csproj",
       "projectName": "Sacral.API",
-      "projectPath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\933\\202305181835\\Sacral\\Sacral.API\\Sacral.API.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\933\\202305181835\\Sacral\\Sacral.API\\obj\\",
+      "projectPath": "C:\\Amar\\Application\\20230518\\Apps\\1\\979\\202305230618\\Sacral\\Sacral.API\\Sacral.API.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Amar\\Application\\20230518\\Apps\\1\\979\\202305230618\\Sacral\\Sacral.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\933\\202305181835\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj": {
-              "projectPath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\933\\202305181835\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj"
+            "C:\\Amar\\Application\\20230518\\Apps\\1\\979\\202305230618\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj": {
+              "projectPath": "C:\\Amar\\Application\\20230518\\Apps\\1\\979\\202305230618\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj"
             },
-            "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\933\\202305181835\\Sacral\\Sacral.Service\\Sacral.Service.csproj": {
-              "projectPath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\933\\202305181835\\Sacral\\Sacral.Service\\Sacral.Service.csproj"
+            "C:\\Amar\\Application\\20230518\\Apps\\1\\979\\202305230618\\Sacral\\Sacral.Service\\Sacral.Service.csproj": {
+              "projectPath": "C:\\Amar\\Application\\20230518\\Apps\\1\\979\\202305230618\\Sacral\\Sacral.Service\\Sacral.Service.csproj"
             }
           }
         }
@@ -6668,6 +6666,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.16, 6.0.16]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x86",
+            "version": "[6.0.16, 6.0.16]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.16, 6.0.16]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.16, 6.0.16]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -6676,7 +6692,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   },

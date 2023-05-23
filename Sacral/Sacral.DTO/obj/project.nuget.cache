@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "AKaNos5EAvNILtyIHyHImYra5jcva3V/RHeekNDdxHIG7zYI84eLdw/eBPSmT/2YM8qoCz8eJqKPtQkdFiGJsw==",
+  "dgSpecHash": "kkV4wp9PijSrwuBt9WLTWIH0u8U+Km6JrMYykskcrqYSs3IbYFW6/QXWtxAcuueLfTmlmLwBob4Q61McZl6Uqg==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\933\\202305181835\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Amar\\Application\\20230518\\Apps\\1\\979\\202305230618\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kkV4wp9PijSrwuBt9WLTWIH0u8U+Km6JrMYykskcrqYSs3IbYFW6/QXWtxAcuueLfTmlmLwBob4Q61McZl6Uqg==",
+  "dgSpecHash": "Am8Xc9z4WU2CCYO2Sk51o7vgemgPHs3VsRzQfOSHNYSyNc0EXLVGkhG1Ya1BAb68f2P/m7Vg673g5BS3qStXuw==",
   "success": true,
-  "projectFilePath": "C:\\Amar\\Application\\20230518\\Apps\\1\\979\\202305230618\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj",
+  "projectFilePath": "C:\\Amar\\Application\\20230529_Debug\\Apps\\1\\1147\\202306132139\\Sacral\\Sacral.DTO\\Sacral.DTO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",

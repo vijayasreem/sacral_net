@@ -30,3 +30,6 @@ C:\Amar\Application\20230529_Debug\Apps\1\1147\202306132139\Sacral\Sacral.Servic
 C:\Amar\Application\20230529_Debug\Apps\1\1145\202306133141\Sacral\Sacral.Service\obj\Debug\net6.0\Sacral.Service.dll
 C:\Amar\Application\20230529_Debug\Apps\1\1145\202306133141\Sacral\Sacral.Service\obj\Debug\net6.0\refint\Sacral.Service.dll
 C:\Amar\Application\20230529_Debug\Apps\1\1145\202306133141\Sacral\Sacral.Service\obj\Debug\net6.0\Sacral.Service.pdb
+C:\Amar\Application\20230529_Debug\Apps\1\1146\202306134903\Sacral\Sacral.Service\obj\Debug\net6.0\Sacral.Service.dll
+C:\Amar\Application\20230529_Debug\Apps\1\1146\202306134903\Sacral\Sacral.Service\obj\Debug\net6.0\refint\Sacral.Service.dll
+C:\Amar\Application\20230529_Debug\Apps\1\1146\202306134903\Sacral\Sacral.Service\obj\Debug\net6.0\Sacral.Service.pdb

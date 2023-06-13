@@ -1,15 +1,13 @@
 ﻿namespace Sacral.Service
 {
-    using Sacral.DTO;
-    using System.Data;
-    using System.Data.SqlClient;
     using System.Threading.Tasks;
+    using Sacral.DTO;
 
     public interface IDesignatedPersonRepository
     {
-        Task<DesignatedPersonModel> CreateDesignatedPersonAsync(DesignatedPersonModel model);
         Task<DesignatedPersonModel> GetDesignatedPersonAsync(int id);
-        Task<DesignatedPersonModel> UpdateDesignatedPersonAsync(DesignatedPersonModel model);
+        Task<int> CreateDesignatedPersonAsync(DesignatedPersonModel designatedPerson);
+        Task UpdateDesignatedPersonAsync(DesignatedPersonModel designatedPerson);
         Task DeleteDesignatedPersonAsync(int id);
     }
 }

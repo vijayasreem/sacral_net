@@ -1,4 +1,4 @@
-﻿using System.Data;
+﻿using System;
 using System.Data.SqlClient;
 using Sacral.DTO;
 
@@ -6,107 +6,84 @@ namespace Sacral
 {
     public class DesignatedPersonRepository : IDesignatedPersonRepository
     {
-        private string _connectionString;
+        private readonly string connectionString;
+
         public DesignatedPersonRepository(string connectionString)
         {
-            _connectionString = connectionString;
-        }
-
-        public async Task<DesignatedPersonModel> CreateDesignatedPersonAsync(DesignatedPersonModel model)
-        {
-            using (var connection = new SqlConnection(_connectionString))
-            {
-                await connection.OpenAsync();
-
-                using (var cmd = connection.CreateCommand())
-                {
-                    cmd.CommandText = @"INSERT INTO DesignatedPerson (FirstName, LastName, ContactNumber, Email)
-                                        VALUES (@firstName, @lastName, @contactNumber, @email);
-                                        SELECT SCOPE_IDENTITY();";
-                    cmd.Parameters.AddWithValue("@firstName", model.FirstName);
-                    cmd.Parameters.AddWithValue("@lastName", model.LastName);
-                    cmd.Parameters.AddWithValue("@contactNumber", model.ContactNumber);
-                    cmd.Parameters.AddWithValue("@email", model.Email);
-
-                    model.Id = await cmd.ExecuteScalarAsync();
-
-                    return model;
-                }
-            }
+            this.connectionString = connectionString;
         }
 
         public async Task<DesignatedPersonModel> GetDesignatedPersonAsync(int id)
         {
-            using (var connection = new SqlConnection(_connectionString))
+            using (var conn = new SqlConnection(connectionString))
             {
-                await connection.OpenAsync();
-
-                using (var cmd = connection.CreateCommand())
+                await conn.OpenAsync();
+                using (var cmd = new SqlCommand("SELECT * FROM DesignatedPerson WHERE Id=@Id", conn))
                 {
-                    cmd.CommandText = @"SELECT Id, FirstName, LastName, ContactNumber, Email
-                                        FROM DesignatedPerson
-                                        WHERE Id = @id";
-                    cmd.Parameters.AddWithValue("@id", id);
-
-                    var reader = await cmd.ExecuteReaderAsync();
-
-                    if (reader.Read())
+                    cmd.Parameters.AddWithValue("@Id", id);
+                    using (var reader = await cmd.ExecuteReaderAsync())
                     {
-                        return new DesignatedPersonModel
+                        if (reader.Read())
                         {
-                            Id = (int)reader["Id"],
-                            FirstName = (string)reader["FirstName"],
-                            LastName = (string)reader["LastName"],
-                            ContactNumber = (string)reader["ContactNumber"],
-                            Email = (string)reader["Email"]
-                        };
-                    }
-                    else
-                    {
+                            return new DesignatedPersonModel
+                            {
+                                Id = (int)reader["Id"],
+                                FirstName = (string)reader["FirstName"],
+                                LastName = (string)reader["LastName"],
+                                Email = (string)reader["Email"],
+                                Phone = (string)reader["Phone"]
+                            };
+                        }
+
                         return null;
                     }
                 }
             }
         }
 
-        public async Task<DesignatedPersonModel> UpdateDesignatedPersonAsync(DesignatedPersonModel model)
+        public async Task<int> CreateDesignatedPersonAsync(DesignatedPersonModel designatedPerson)
         {
-            using (var connection = new SqlConnection(_connectionString))
+            using (var conn = new SqlConnection(connectionString))
             {
-                await connection.OpenAsync();
-
-                using (var cmd = connection.CreateCommand())
+                await conn.OpenAsync();
+                using (var cmd = new SqlCommand("INSERT INTO DesignatedPerson (FirstName, LastName, Email, Phone) VALUES (@FirstName, @LastName, @Email, @Phone); SELECT CAST(SCOPE_IDENTITY() as int)", conn))
                 {
-                    cmd.CommandText = @"UPDATE DesignatedPerson
-                                        SET FirstName = @firstName, 
-                                            LastName = @lastName, 
-                                            ContactNumber = @contactNumber,
-                                            Email = @email
-                                        WHERE Id = @id";
-                    cmd.Parameters.AddWithValue("@id", model.Id);
-                    cmd.Parameters.AddWithValue("@firstName", model.FirstName);
-                    cmd.Parameters.AddWithValue("@lastName", model.LastName);
-                    cmd.Parameters.AddWithValue("@contactNumber", model.ContactNumber);
-                    cmd.Parameters.AddWithValue("@email", model.Email);
+                    cmd.Parameters.AddWithValue("@FirstName", designatedPerson.FirstName);
+                    cmd.Parameters.AddWithValue("@LastName", designatedPerson.LastName);
+                    cmd.Parameters.AddWithValue("@Email", designatedPerson.Email);
+                    cmd.Parameters.AddWithValue("@Phone", designatedPerson.Phone);
+
+                    return (int)await cmd.ExecuteScalarAsync();
+                }
+            }
+        }
+
+        public async Task UpdateDesignatedPersonAsync(DesignatedPersonModel designatedPerson)
+        {
+            using (var conn = new SqlConnection(connectionString))
+            {
+                await conn.OpenAsync();
+                using (var cmd = new SqlCommand("UPDATE DesignatedPerson SET FirstName=@FirstName, LastName=@LastName, Email=@Email, Phone=@Phone WHERE Id=@Id", conn))
+                {
+                    cmd.Parameters.AddWithValue("@Id", designatedPerson.Id);
+                    cmd.Parameters.AddWithValue("@FirstName", designatedPerson.FirstName);
+                    cmd.Parameters.AddWithValue("@LastName", designatedPerson.LastName);
+                    cmd.Parameters.AddWithValue("@Email", designatedPerson.Email);
+                    cmd.Parameters.AddWithValue("@Phone", designatedPerson.Phone);
 
                     await cmd.ExecuteNonQueryAsync();
-
-                    return model;
                 }
             }
         }
 
         public async Task DeleteDesignatedPersonAsync(int id)
         {
-            using (var connection = new SqlConnection(_connectionString))
+            using (var conn = new SqlConnection(connectionString))
             {
-                await connection.OpenAsync();
-
-                using (var cmd = connection.CreateCommand())
+                await conn.OpenAsync();
+                using (var cmd = new SqlCommand("DELETE FROM DesignatedPerson WHERE Id=@Id", conn))
                 {
-                    cmd.CommandText = @"DELETE FROM DesignatedPerson 
-                                        WHERE Id = @id";
-                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.Parameters.AddWithValue("@Id", id);
 
                     await cmd.ExecuteNonQueryAsync();
                 }

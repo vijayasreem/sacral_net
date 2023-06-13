@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Sacral.API
 {
-    [Route("/api/[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class DesignatedPersonController : ControllerBase
     {
@@ -16,50 +16,31 @@ namespace Sacral.API
             _designatedPersonService = designatedPersonService;
         }
 
-        [HttpPost]
-        public async Task<ActionResult<DesignatedPersonModel>> CreateDesignatedPersonAsync([FromBody] DesignatedPersonModel model)
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(int id)
         {
-            var result = await _designatedPersonService.CreateDesignatedPersonAsync(model);
-
-            if (result == null)
-            {
-                return BadRequest("Unable to create designated person");
-            }
-
+            var result = await _designatedPersonService.GetDesignatedPersonAsync(id);
             return Ok(result);
         }
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<DesignatedPersonModel>> GetDesignatedPersonAsync(int id)
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] DesignatedPersonModel designatedPersonModel)
         {
-            var result = await _designatedPersonService.GetDesignatedPersonAsync(id);
-
-            if (result == null)
-            {
-                return NotFound("Designated person not found");
-            }
-
+            var result = await _designatedPersonService.CreateDesignatedPersonAsync(designatedPersonModel);
             return Ok(result);
         }
 
         [HttpPut]
-        public async Task<ActionResult<DesignatedPersonModel>> UpdateDesignatedPersonAsync([FromBody] DesignatedPersonModel model)
+        public async Task<IActionResult> Update([FromBody]DesignatedPersonModel designatedPersonModel)
         {
-            var result = await _designatedPersonService.UpdateDesignatedPersonAsync(model);
-
-            if (result == null)
-            {
-                return BadRequest("Unable to update designated person");
-            }
-
-            return Ok(result);
+            await _designatedPersonService.UpdateDesignatedPersonAsync(designatedPersonModel);
+            return Ok();
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteDesignatedPersonAsync(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             await _designatedPersonService.DeleteDesignatedPersonAsync(id);
-
             return Ok();
         }
     }

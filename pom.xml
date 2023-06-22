@@ -8,12 +8,12 @@
 		<version>2.7.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.Sacral</groupId>
-	<artifactId>SATPU-9</artifactId>
+	<groupId>com.Sacral.com</groupId>
+	<artifactId>BBP-25</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>Testing_2</name>
-	<description>Testing_2</description>
+	<name>dotnet_project</name>
+	<description>dotnet_project</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -28,8 +28,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
